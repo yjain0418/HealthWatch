@@ -4,3 +4,4 @@ flask_pymongo
 dotenv
 os
 datetime
+gunicorn
