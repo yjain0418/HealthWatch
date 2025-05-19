@@ -6,8 +6,6 @@
 - **Backend**: A Flask-based REST API server that receives, stores, and manages system reports.
 - **Frontend**: A React/Next.js web dashboard to view, filter, and analyze all reported system data in real-time.
 
----
-
 ## 🚀 Features
 
 ### Agent (Client)
@@ -26,8 +24,6 @@
 - Shows real-time health status and last check-in time.
 - Supports filtering by OS type and health issues.
 - Mobile responsive and user-friendly interface.
-
----
 
 ## 📁 Monorepo Structure
 
@@ -58,9 +54,6 @@ health-watch/
 │
 └── README.md # This root README
 ```
-
-
----
 
 ## 📦 Installation & Setup
 
