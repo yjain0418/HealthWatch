@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='health-watch',
-    version='1.0.0',
+    version='1.0.3',
     description='Cross-platform system monitoring utility',
     author='Yashwant Jain',
     packages=find_packages(),
@@ -12,7 +12,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'sysmon=system_monitor.client.agent:main',
+            'sysmon=client.agent:main',
         ],
     },
     include_package_data=True,

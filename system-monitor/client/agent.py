@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ENDPOINT = os.getenv("API_URL")
+API_ENDPOINT = os.getenv("API_URL") or "https://healthwatch-1ibo.onrender.com/reports"
 
 MACHINE_ID = socket.gethostname()
 
