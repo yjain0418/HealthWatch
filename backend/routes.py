@@ -5,6 +5,10 @@ from utils import flag_issues
 
 system_routes = Blueprint("routes", __name__)
 
+@system_routes.route('/', methods=['GET'])
+def home():
+    return "Backend Server is working..."
+
 @system_routes.route("/reports", methods=["POST"])
 def receive_report():
     data = request.get_json()
