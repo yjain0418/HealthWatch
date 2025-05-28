@@ -21,9 +21,7 @@ class LinuxSystemCheck(SystemCheck):
     def check_sleep_settings(self):
         def get_timeout(setting):
             output = subprocess.getoutput(f"gsettings get org.gnome.settings-daemon.plugins.power {setting}")
-            if "uint32" in output:
-                return int(output.split()[-1])
-            return None
+            return int(output.split()[-1])
 
         ac_time = get_timeout("sleep-inactive-ac-timeout")
         dc_time = get_timeout("sleep-inactive-battery-timeout")

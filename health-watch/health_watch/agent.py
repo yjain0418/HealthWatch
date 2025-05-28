@@ -5,7 +5,7 @@ import hashlib
 import socket
 import requests
 from datetime import datetime
-from system_checks import get_checker, get_os_type
+from health_watch.system_checks import get_checker, get_os_type
 from dotenv import load_dotenv
 
 load_dotenv()
