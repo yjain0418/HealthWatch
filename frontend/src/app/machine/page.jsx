@@ -22,7 +22,7 @@ export default function MachinesPage() {
   const [search, setSearch] = useState("");
   const [filterOS, setFilterOS] = useState("all");
   const [filterStatus, setFilterStatus] = useState("all");
-  const [sortBy, setSortBy] = useState("lastSeenDesc"); // lastSeenDesc, lastSeenAsc, machineIdAsc, machineIdDesc, issuesAsc, issuesDesc
+  const [sortBy, setSortBy] = useState("lastSeenDesc");
 
   useEffect(() => {
     async function fetchReports() {
@@ -145,7 +145,6 @@ export default function MachinesPage() {
               <SelectItem value="windows">Windows</SelectItem>
               <SelectItem value="macos">macOS</SelectItem>
               <SelectItem value="linux">Linux</SelectItem>
-              {/* Add other OS types if needed */}
             </SelectGroup>
           </SelectContent>
         </Select>
@@ -211,7 +210,7 @@ export default function MachinesPage() {
                   {hasIssues ? (
                     <Badge variant="destructive">Issues</Badge>
                   ) : (
-                    <Badge variant="default">Healthy</Badge>
+                    <Badge variant="success">Healthy</Badge>
                   )}
                 </TableCell>
                 <TableCell>

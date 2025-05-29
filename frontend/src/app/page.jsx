@@ -90,7 +90,7 @@ export default function Home() {
                       </Badge>
                     ))
                   ) : (
-                    <Badge variant="default">Healthy</Badge>
+                    <Badge variant="success">Healthy</Badge>
                   )}
                 </div>
               </CardContent>
