@@ -21,7 +21,7 @@ Or install locally from source:
 
 ```bash
 git clone https://github.com/yourusername/yourrepo.git
-cd yourrepo/system-monitor
+cd yourrepo/health_watch
 pip install .
 ```
 
@@ -38,7 +38,7 @@ This tells the agent where to send the system health reports.
 ## Usage
 Runs the agent from the command line:
 ```bash
-python -m health-watch.client.agent
+python -m health_watch.agent
 ```
 
 The agent will:
