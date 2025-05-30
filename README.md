@@ -29,12 +29,13 @@
 
 ```bash
 health-watch/
-├── __init__.py 
-├── client/ 
+├── setup.py 
+├── health_watch/ 
 │ ├── system_checks/ 
 │ ├── __init__.py
+│ ├── MANIFEST.in
 │ ├── agent.py
-│── requirements.txt
+│ ├── requirements.txt
 │
 ├── backend/ # Flask backend API server
 │ ├── app.py
@@ -74,7 +75,7 @@ API_URL=http://your-backend-url/reports
 Run the agent:
 
 ```bash
-python -m health_watch.client.agent
+python -m health_watch.agent
 ```
 
 ### 2. Backend (Server)
